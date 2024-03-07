@@ -1,34 +1,93 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>摸鱼日报</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
             background-color: #f0f0f0;
         }
-        h1 {
-            color: #333;
-            text-align: center;
-            padding: 25px 0;
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar h1 {
+            color: #fff;
+            font-size: 24px;
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+        .navbar ul li {
+            margin: 0 10px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navbar ul li a:hover {
+            color: #ccc;
         }
         .content {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 25px;
+            padding: 20px;
         }
         .content div {
-            margin: 30px;
+            margin: 15px;
             text-align: center;
+            transition: transform 0.3s;
+        }
+        .content div:hover {
+            transform: scale(1.1);
+        }
+        .content h2 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .content img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .navbar h1 {
+                font-size: 18px;
+            }
+            .navbar ul {
+                display: none;
+            }
+            .content img {
+                width: 200px;
+                height: 150px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>摸鱼日报</h1>
+    <div class="navbar">
+        <h1>摸鱼日报</h1>
+        <ul>
+            <li><a href="#">摸鱼日历</a></li>
+            <li><a href="#">明星八卦</a></li>
+            <li><a href="#">内涵段子</a></li>
+            <li><a href="#">新闻简报</a></li>
+            <li><a href="#">情感花园</a></li>
+            <li><a href="#">星座运势</a></li>
+        </ul>
+    </div>
     <div class="content">
         <div>
             <h2>摸鱼日历</h2>
