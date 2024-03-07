@@ -2,57 +2,113 @@
 <html>
 <head>
     <title>摸鱼日报</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            padding: 20px 0;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-        .content div {
-            margin: 15px;
-            text-align: center;
-        }
-    </style>
+    <!-- 引入 Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- 引入自定义的 CSS 文件 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>摸鱼日报</h1>
-    <div class="content">
-        <div>
-            <h2>摸鱼日历</h2>
-            <img src="https://dayu.qqsuu.cn/moyurili/apis.php">
+    <!-- 创建一个导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="摸鱼日报" width="30" height="30" class="d-inline-block align-top">
+                摸鱼日报
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="切换导航">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首页 <span class="sr-only">(当前)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">关于</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">联系</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h2>明星八卦</h2>
-            <img src="https://dayu.qqsuu.cn/mingxingbagua/apis.php">
-        </div>
-        <div>
-            <h2>内涵段子</h2>
-            <img src="https://dayu.qqsuu.cn/neihanduanzi/apis.php">
-        </div>
-        <div>
-            <h2>新闻简报</h2>
-            <img src="https://dayu.qqsuu.cn/weiyujianbao/apis.php">
-        </div>
-        <div>
-            <h2>情感花园</h2>
-            <img src="https://dayu.qqsuu.cn/qingganhuayuan/apis.php">
-        </div>
-        <div>
-            <h2>星座运势</h2>
-            <img src="https://dayu.qqsuu.cn/xingzuoyunshi/apis.php">
+    </nav>
+    <!-- 创建一个主要内容区域 -->
+    <div class="container">
+        <!-- 创建一个标题 -->
+        <h1 class="display-4 text-center my-4">摸鱼日报</h1>
+        <!-- 创建一个网格系统 -->
+        <div class="row">
+            <!-- 创建一个摸鱼日历的列 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">摸鱼日历</h5>
+                        <p class="card-text">每天为你推荐一个摸鱼的理由，让你摸鱼无罪。</p>
+                    </div>
+                    <img src="https://dayu.qqsuu.cn/moyurili/apis.php" class="card-img-top" alt="摸鱼日历">
+                </div>
+            </div>
+            <!-- 创建一个明星八卦的列 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">明星八卦</h5>
+                        <p class="card-text">每天为你提供最新的明星八卦，让你了解娱乐圈的动态。</p>
+                    </div>
+                    <img src="https://dayu.qqsuu.cn/mingxingbagua/apis.php" class="card-img-top" alt="明星八卦">
+                </div>
+            </div>
+            <!-- 创建一个内涵段子的列 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">内涵段子</h5>
+                        <p class="card-text">每天为你分享最搞笑的内涵段子，让你笑出腹肌。</p>
+                    </div>
+                    <img src="https://dayu.qqsuu.cn/neihanduanzi/apis.php" class="card-img-top" alt="内涵段子">
+                </div>
+            </div>
+            <!-- 创建一个新闻简报的列 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">新闻简报</h5>
+                        <p class="card-text">每天为你汇总最新的国内外新闻，让你一目了然。</p>
+                    </div>
+                    <img src="https://dayu.qqsuu.cn/weiyujianbao/apis.php" class="card-img-top" alt="新闻简报">
+                </div>
+            </div>
+            <!-- 创建一个情感花园的列 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">情感花园</h5>
+                        <p class="card-text">每天为你提供最温暖的情感故事，让你感受爱的力量。</p>
+                    </div>
+                    <img src="https://dayu.qqsuu.cn/qingganhuayuan/apis.php" class="card-img-top" alt="情感花园">
+                </div>
+            </div>
+            <!-- 创建一个星座运势的列 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">星座运势</h5>
+                        <p class="card-text">每天为你预测你的星座运势，让你掌握自己的命运。</p>
+                    </div>
+                    <img src="https://dayu.qqsuu.cn/xingzuoyunshi/apis.php" class="card-img-top" alt="星座运势">
+                </div>
+            </div>
         </div>
     </div>
+    <!-- 创建一个页脚 -->
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container">
+            <p class="text-center mb-0">© 2024 摸鱼日报. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- 引入 Bootstrap 的 JS 文件 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
