@@ -1,0 +1,64 @@
+/* 设置全局样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* 设置导航栏样式 */
+.navbar {
+    background-color: #333;
+    color: white;
+}
+
+/* 设置标题样式 */
+h1 {
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* 设置内容区域样式 */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* 设置每个内容块的样式 */
+.content div {
+    margin: 15px;
+    text-align: center;
+}
+
+/* 设置卡片样式 */
+.card {
+    background-color: white;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* 设置页脚样式 */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
